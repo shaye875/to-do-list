@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>רשימת משימות</h1>
+    </header>
+    <nav>
+        <button class="butNav" id="hide">הסתר משימות</button>
+        <button class="butNav" id="view">הצג משימות</button>
+        <button class="butNav" id="delAll">מחק הכל</button>
+    </nav>
+    <form>
+        <h1>צור משימה</h1>
+        <div id="head">
+            <div>
+                <label for="name">שם המשימה:</label>
+                <input class="srtInt" type="text" id="name" placeholder="שם..." name="name" value="">
+            </div>
+            <div>
+                <label for="agent">סוכן:</label>
+                <input class="srtInt" type="text" id="agent" placeholder="סוכן..." name="agent" value="">
+            </div>
+            <div>
+                <label for="area">אזור המשימה:</label>
+                <input class="srtInt" type="text" id="area" placeholder="אזור..." name="area" value="">
+            </div>
+        </div>
+        <div id="divTexEr">
+            <label for="details">פרוט המשימה:</label>
+            <textarea rows="5" cols="50" id="details" placeholder="פרטים..." name="details" value=""></textarea>
+        </div>
+        <input type="submit" value="שלח" id="submit">
+    </form>
+    <div id="main">
+        <h1>משימות</h1>
+    </div>
+    <div id="tasks">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
